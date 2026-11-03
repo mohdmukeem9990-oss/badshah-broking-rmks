@@ -1,328 +1,205 @@
+
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="hi">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ज्योतिष परामर्श</title>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2148416862454621');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2148416862454621&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join Telegram Channel</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #e1bee7);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .elementor img {
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    height: auto;
-    max-width: 100%;
-    border-radius: 90px;
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-    .card {
-      backdrop-filter: blur(12px);
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 1rem;
-      padding: 2rem;
-      max-width: 400px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    }
-    .btn-telegram {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 0.8rem 1.2rem;
-      border-radius: 0.75rem;
-      font-weight: bold;
-      color: white;
-      background: linear-gradient(90deg, #0088cc, #00bcd4);
-      transition: 0.3s;
-      width: 100%;
-    }
-    .btn-telegram:hover {
-      background: linear-gradient(90deg, #00bcd4, #0088cc);
-      transform: translateY(-2px);
-    }
-    .feature {
-      display: flex;
-      align-items: flex-start;
-      gap: 6px;
-      font-size: 0.95rem;
-    }
-  </style>
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #17132b;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.card {
+    width: 100%;
+    max-width: 360px;
+    padding: 25px 20px;
+    text-align: center;
+    background: #241d3d;
+    border: 1px solid #514269;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px #0005;
+}
+
+.symbol {
+    width: 58px;
+    height: 58px;
+    margin: auto auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #f0cc8b;
+    color: #241a30;
+    font-size: 30px;
+}
+
+.tag {
+    color: #f0cc8b;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    line-height: 1.3;
+    margin: 12px 0;
+}
+
+.subtitle {
+    color: #d1c9df;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #514269;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+}
+
+.service {
+    padding: 11px 7px;
+    background: #302749;
+    border-radius: 10px;
+    color: #f4e8d3;
+    font-size: 13px;
+}
+
+.service span {
+    color: #f0cc8b;
+    margin-right: 5px;
+}
+
+.info {
+    color: #c6bdd5;
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 18px 0;
+}
+
+.telegram-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 11px;
+    background: #e9bd72;
+    color: #241a30;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.telegram-btn:hover {
+    background: #f6dba6;
+    transform: translateY(-2px);
+}
+
+.disclaimer {
+    color: #a99fb8;
+    font-size: 10px;
+    line-height: 1.6;
+    margin-top: 14px;
+}
+</style>
 </head>
+
 <body>
 
-  <div class="card">
-    <!-- Profile Image -->
-    <div class="w-32 h-32 mx-auto mb-4 ">
-      <img src="https://telegram-ads.riyazshaikh.com/wp-content/uploads/2025/06/IMG-20250627-WA0004.jpg" alt="Profile" class="w-full h-full rounded-full object-cover shadow-lg border-4 border-white rounded-xxl">
+<div class="card">
+
+    <div class="symbol">✧</div>
+
+    <div class="tag">
+        व्यक्तिगत ज्योतिष परामर्श
     </div>
 
-    <!-- Heading -->
-    <h1 class="text-xl font-extrabold text-gray-800 mb-1">
-BADSHAH BROKING OFFICIAL 💸🏆
+    <h1>
+        अपने जीवन की दिशा को समझें
     </h1>
 
-    <!-- Experience -->
-    <p class="text-red-600 font-semibold mb-4">📊 7 years experience 📊</p>
+    <p class="subtitle">
+        ज्योतिष परामर्श के माध्यम से अपने जीवन से जुड़े सवालों पर व्यक्तिगत मार्गदर्शन प्राप्त करें।
+    </p>
 
-    <!-- CTA Button -->
-    <a href="https://t.me/+I_cC46Ab_TsyOGQ1" target="_blank" class="btn-telegram mb-6">
+    <hr>
 
-      
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M16 8a8 8 0 1 1-16 0 8 8 0 0 1 16 0zM6.79 10.89l-.27 3.67c.39 0 .56-.17.77-.38l1.85-1.76 3.84 2.8c.7.39 1.19.19 1.36-.65l2.47-11.59c.22-.98-.35-1.37-1.05-1.14L1.13 6.24c-.95.37-.93.9-.17 1.14l3.57 1.11 8.3-5.23c.39-.26.74-.12.45.14L6.79 10.89z"/>
-      </svg>
-      JOIN TELEGRAM 💬
-    </a>
+    <h2>हमारी परामर्श सेवाएँ</h2>
 
-    <!-- Features -->
-    <p class="text-red-600 font-bold mb-4">💎 DAILY PROFIT GURANTEE 💎</p>
-    <div class="text-left space-y-3 text-gray-800 mb-6">
-      <div class="feature">📊 <span><b>Live Daily Trades</b> – From my portfolio to yours!</span></div>
-      <div class="feature">🔥 <span><b>Exclusive Signals</b> – Get the same trades I take!</span></div>
-      <div class="feature">💯 <span><b>High Accuracy</b> – Consistent proven strategy!</span></div>
-      <div class="feature">💡 <span><b>Real-Time Updates</b> – Instant market alerts!</span></div>
+    <div class="services">
+
+        <div class="service">
+            <span>☾</span> कुंडली विश्लेषण
+        </div>
+
+        <div class="service">
+            <span>♡</span> प्रेम एवं विवाह
+        </div>
+
+        <div class="service">
+            <span>✦</span> करियर मार्गदर्शन
+        </div>
+
+        <div class="service">
+            <span>☼</span> व्यापार एवं जीवन
+        </div>
+
+        <div class="service">
+            <span>✧</span> ग्रह एवं नक्षत्र
+        </div>
+
+        <div class="service">
+            <span>🔮</span> व्यक्तिगत परामर्श
+        </div>
+
     </div>
 
-    <!-- Hindi Section -->
-    <h2 class="text-lg font-bold text-gray-800 mb-2">क्या आप ट्रेडिंग से पैसे कमाना चाहते हैं?</h2>
-    <p class="text-red-600 font-semibold">
-      अगर हां तो दिए गए टेलीग्राम बटन पर दबाएं !
+    <p class="info">
+        परामर्श की जानकारी, उपलब्धता और शुल्क जानने के लिए अभी टेलीग्राम पर संपर्क करें।
     </p>
-  </div>
+
+    <a
+        href="https://t.me/YourTelegramUsername"
+        class="telegram-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        ✈ टेलीग्राम पर संपर्क करें
+    </a>
+
+    <p class="disclaimer">
+        ज्योतिष पारंपरिक मान्यताओं पर आधारित है।
+        किसी विशेष परिणाम की गारंटी नहीं दी जाती।
+    </p>
+
+</div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
